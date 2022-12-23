@@ -1,0 +1,13 @@
+[Unit]
+Description=Synchronizes the screenpad brightness to the Main Monitor
+
+[Service]
+Type=simple
+User=pleb
+ExecStart=/home/pleb/Documents/zenbook_duo_utils/screenpad_brightness_synchronizer/screenpad_synchronizer
+Restart=always
+Restart=5s
+
+[Install]
+WantedBy=multi-user.target
+After=display-manager.service
