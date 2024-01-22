@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 import sys
 
+if not hasattr(sys, 'ps1'):
+    sys.stderr = sys.stdout = open("/tmp/zenscreen_debug.log", "a")
+
 import Xlib
 from Xlib import X, display
 from Xlib.ext import randr
 
-if not hasattr(sys, 'ps1'):
-    sys.stderr = sys.stdout = open("/tmp/zenscreen_debug.log", "a")
-
+print("Move screen started")
 SCALING = True
 
 # https://stackoverflow.com/a/64502961

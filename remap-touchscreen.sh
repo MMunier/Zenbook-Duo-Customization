@@ -18,4 +18,7 @@ remap() {
     xinput map-to-output "ELAN9009:00 04F3:2C1B" "DP3" >> /tmp/debug
 }
 
+remap 0 &
 remap 1 &
+remap 2 &
+remap 3 &
