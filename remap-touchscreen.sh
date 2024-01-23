@@ -15,7 +15,7 @@ remap() {
     # echo "$active_display_count" >> "/tmp/debug"
     echo "Remapping" >> "/tmp/debug"
     xinput map-to-output "ELAN9008:00 04F3:2D55" "eDP1" >> /tmp/debug
-    xinput map-to-output "ELAN9009:00 04F3:2C1B" "DP3" >> /tmp/debug
+    xinput map-to-output "ELAN9009:00 04F3:2C1B" "DP1" >> /tmp/debug
 }
 
 remap 0 &
